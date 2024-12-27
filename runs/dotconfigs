@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sudo apt install stow
+
+git clone https://github.com/anuragkanwar/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
+stow --adopt .
